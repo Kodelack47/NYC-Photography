@@ -4,6 +4,8 @@ A storefront for a fine-art city photography studio: browse an exhibition of 16 
 York and around the world, add them to a cart, and check out. It's built with **HTML, CSS, and
 vanilla JavaScript** and works on phones, tablets, and desktops.
 
+**[View the live site →](https://kodelack47.github.io/NYC-Photography/)**
+
 ## Features
 
 - **Exhibition:** 16 prints with titles, locations, captions, and prices, filterable by
