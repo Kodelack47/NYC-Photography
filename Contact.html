@@ -1,67 +1,103 @@
 <!DOCTYPE html>
+<!-- Author: Ousmana Tunkara · github.com/Kodelack47 · NYC Photography -->
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>WAP</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="main.css">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact NYC Photography about prints and commissions.">
+  <title>Contact | NYC Photography</title>
+  <link rel="stylesheet" href="styles/site.css">
 </head>
-
 <body>
-    <!-- header section -->
-    <header>
-    
-        <div href="index.html" class="Head">
-            <b>NEW YORK CITY PHOTOGRAPHY</b>
-        </div>
-         <nav class = "navbar-expand-md navbar-light bg link-light">
-            <div class ="navbar container">
-            <ul>
-                <li><a class = "navbar-brand" href = "index.html"> Home</a></li>
-                <li><a class = "navbar-brand" href = "Exhibition.html">Exhibitions</a> </li> 
-                <li><a class = "navbar-brand" href = "user-reg.html">Registration</a></li>
-                <li><a class = "navbar-brand" href = "login.html">Login</a></li>
-                <li><a class = "navbar-brand" href = "checkout.html"> Checkout</a></li>
-            </ul>
-        </nav>
-        <!-- <div class="cart" src="capstone img\cart-shopping-solid.svg"></div> -->
-    </header>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">NYC <span>Photography</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="Exhibition.html">Exhibition</a>
+        <a href="Contact.html" class="active" aria-current="page">Contact</a>
+        <a href="login.html">Log in</a>
+        <a href="checkout.html" class="cart-link">Cart <span class="cart-count" aria-label="items in cart">0</span></a>
+      </nav>
+    </div>
+  </header>
 
-        <li><a href="P&P.html">Privacy Policy</a></li>
-        <li><a href="#">Terms and Conditions</a></li>
-        <li><a href="#">Shipping and Returns</a></li>
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Let's talk prints</h1>
+        <p class="lead">Questions about an order, a custom size, or a commissioned shoot? Send a message and we'll reply within two business days.</p>
+      </div>
+    </section>
 
-      
-    <footer>
-        
-        <div class="social-media">
-            <h3>Follow Us</h3>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Pinterest</a></li>
-            </ul>
+    <section class="section" style="padding-top:16px">
+      <div class="container split" style="align-items:start">
+        <div>
+          <div class="notice" id="confirmation" role="status" hidden></div>
+          <form class="form-card" id="contact-form" novalidate>
+            <div class="form-grid">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name">
+              <div class="error" id="name-error"></div>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email">
+              <div class="error" id="email-error"></div>
+            </div>
+            <div class="full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message"></textarea>
+              <div class="error" id="message-error"></div>
+            </div>
+              <div class="full"><button class="btn btn-gold" type="submit">Send message</button></div>
+            </div>
+            <p class="demo-note">Portfolio demo: messages aren't sent anywhere.</p>
+          </form>
         </div>
-        <div class="contact-us">
-            <h3>Contact Us</h3>
-            <p>123 Main Street, New York, NY 10001</p>
-            <p>Phone: (555) 555-5555</p>
-            <p>Email: info@example.com</p>
+        <div>
+          <h2 style="font-size:1.4rem">Visit the studio</h2>
+          <p>123 Main Street<br>New York, NY 10001</p>
+          <p>Tuesday to Saturday, 11 am to 6 pm</p>
+          <p>info@nycphotography.example</p>
+
+          <h2 id="policies" style="font-size:1.4rem;margin-top:32px;scroll-margin-top:90px">Policies</h2>
+          <p><strong>Shipping.</strong> Prints are made to order and ship within 5 business days, rolled in a protective tube. U.S. shipping is a flat $12.</p>
+          <p><strong>Returns.</strong> If a print isn't right for you, return it within 30 days of delivery for a full refund.</p>
+          <p><strong>Privacy.</strong> We only use your details to process your order and answer your messages. We never sell or share them.</p>
         </div>
-        <div class="newsletter">
-            <h3>Subscribe to our Newsletter</h3>
-            <form action="submit">
-                <input type="email" placeholder="Enter your email">
-                <button type="submit">Subscribe</button>
-            </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>NYC Photography</h2>
+          <p>Fine-art prints of New York and the world's great cities, shot from rooftops, bridges, and the street.</p>
         </div>
-    </footer>
-    <div class="copyright">&copy; 2023 NYCP LLC</div>
-   
+        <div>
+          <h2>Shop</h2>
+          <a href="Exhibition.html">All prints</a>
+          <a href="checkout.html">Cart</a>
+          <a href="user-reg.html">Create an account</a>
+        </div>
+        <div>
+          <h2>Studio</h2>
+          <a href="Contact.html">Contact</a>
+          <a href="Contact.html#policies">Shipping &amp; returns</a>
+          <a href="Contact.html#policies">Privacy</a>
+        </div>
+      </div>
+      <p class="copyright">&copy; <span id="year">2026</span> NYC Photography · A portfolio project by Ousmana Tunkara</p>
+    </div>
+  </footer>
+
+  <script src="scripts/site.js"></script>
+  <script src="scripts/forms.js"></script>
+</body>
+</html>
