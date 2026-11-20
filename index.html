@@ -1,288 +1,109 @@
-<!DOCTYPE html class"html">
-
+<!DOCTYPE html>
+<!-- Author: Ousmana Tunkara · github.com/Kodelack47 · NYC Photography -->
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>WAP</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="main.css">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-
-        header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #000000;
-  color: rgb(255, 255, 255);
-  padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
-}
-
-header:hover {
-  background-color: #000000;
-  color: white;
-} 
-        .home-img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* float: right; */
-            /* width: 70vw; */
-            margin-top: 4rem;
-            margin-bottom: 4rem;
-            /* border: 1px solid #ddd;
-            border-radius: 4px; */
-            padding: 6px;
-            /* height: 100vh; */
-        }
-
-        /* img {
-            max-width: 100%;
-            height: auto;
-        } */
-
-
-
-        /* container section */
-        * {
-            box-sizing: border-box;
-        }
-
-        .slideshow-container {
-            max-width: 1000px;
-            position: relative;
-            margin: auto;
-        }
-
-        .slide {
-            display: none;
-        }
-
-        .fade {
-            animation-name: fade;
-            animation-duration: 5s;
-        }
-
-        .prev,
-        .next {
-            position: absolute;
-            top: 50%;
-            margin-top: -22px;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        .active,
-        .dot:hover {
-            background-color: #717171;
-        }
-
-        @keyframes fade {
-            from {
-                opacity: .4
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        footer{
-            position:relative;
-        }
-    </style>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fine-art prints of New York City and the world&#x27;s great skylines.">
+  <title>NYC Photography | Fine-Art City Prints</title>
+  <link rel="stylesheet" href="styles/site.css">
 </head>
-
 <body>
-
-    <!-- header section -->
-    <header>
-
-        <div href="index.html" class="Head">
-            <b>NEW YORK CITY PHOTOGRAPHY</b>
-        </div>
-
-        <nav class="navbar-expand-md navbar-light bg link-light">
-            <div class="navbar-container">
-
-                <ul>
-                    <li><a class="navbar-brand" href="index.html">Home</a></li>
-                    <li><a class="navbar-brand" href="Exhibition.html">Exhibitions</a> </li>
-                    <li><a class="navbar-brand" href="user-reg.html">Registration</a></li>
-                    <li><a class="navbar-brand" href="login.html">Login</a></li>
-                    <li><a class="navbar-brand" href="checkout.html"> Checkout</a></li>
-                </ul>
-        </nav>
-    </header>
-
-    <!-- main -->
-    <div>
-        <!-- <section class="banner">
-            <h1>Welcome To Our Website</h1>
-            <p>Shop now and get the best deals!</p>
-        </section> -->
-
-        <div class="home-img">
-            <img src="capstone img\world amaze.jpg" alt="Wide Home Screen Picture">
-        </div>
-
-        <div class="w3-row-padding w3-margin-top">
-
-            <div class="w3-third">
-              <div class="w3-card">
-                <img src="capstone img\duba.jpg">
-                <div class="w3-container">
-                  <h5>ABU DUBIA</h5>
-                  <div class="price">$19.99</div>
-                  <button class="buy">Buy Now</button>
-                </div>
-              </div>
-            </div>
-      
-            <div class="w3-third">
-              <div class="w3-card">
-                <img src="capstone img\MOSCOW.jpg">
-                <div class="w3-container">
-                  <h5>MOSCOW</h5>
-                  <div class="price">$19.99</div>
-                  <button class="buy">Buy Now</button>
-                </div>
-              </div>
-            </div>
-      
-            <div class="w3-third">
-              <div class="w3-card">
-                <img src="capstone img\sunviewnyc.jpg.crdownload">
-                <div class="w3-container">
-                  <h5>NEW YORK</h5>
-                  <div class="price">$999.999.999</div>
-                  <button class="buy">Buy Now</button>
-                </div>
-              </div>
-            </div>
-
-        <!-- <div class="slideshow-container">
-
-            <div class="slide fade">
-                <img src="capstone img/atl.jpg">
-            </div>
-
-            <div class="slide fade ">
-                <img src="capstone img/GERMANY.jpg">
-            </div>
-
-            <div class="slide fade">
-                <img src="capstone img\florida-orlando.jpg">
-            </div>
-
-            <div class="slide fade">
-                <img src="capstone img\hong kong.jpg">
-            </div>
-
-            <div class="slide fade">
-                <img src="capstone img\LAS VEGAS.jpg">
-            </div>
-
-            <div class="slide fade">
-                <img src="capstone img\london.jpg">
-            </div>
-
-            <div class="slide fade">
-                <img src="capstone img\los angeles.jpg">
-            </div>
-
-            <div class="slide fade">
-                <img src="capstone img\PSG.jpg">
-            </div>
-
-            <div class="slide fade">
-                <img src="capstone img\MOSCOW.jpg">
-            </div>
-
-            <div class="slide fade">
-                <img src="capstone img\SEATTLE.jpg">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div> -->
-
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">NYC <span>Photography</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="Exhibition.html">Exhibition</a>
+        <a href="Contact.html">Contact</a>
+        <a href="login.html">Log in</a>
+        <a href="checkout.html" class="cart-link">Cart <span class="cart-count" aria-label="items in cart">0</span></a>
+      </nav>
     </div>
-    </main>
+  </header>
 
-
-
-    <footer>
-
-        <div class="social-media">
-            <h3>Follow Us</h3>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Pinterest</a></li>
-            </ul>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Fine-art city photography</p>
+        <h1>The city, in its best light.</h1>
+        <p>Limited prints of New York and the world's great skylines, captured at golden hour, after dark, and from above.</p>
+        <div class="btn-row">
+          <a class="btn btn-gold" href="Exhibition.html">View the exhibition</a>
+          <a class="btn btn-ghost" href="Contact.html">Commission a shoot</a>
         </div>
-        <div class="contact-us">
-            <h3>Contact Us</h3>
-            <p>123 Main Street, New York, NY 10001</p>
-            <p>Phone: (555) 555-5555</p>
-            <p>Email: info@example.com</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Featured prints</p>
+        <h2 class="section-title">Collector favorites</h2>
+        <p class="lead">Three of our most-requested images. Every print is 18 × 24 inches on archival paper.</p>
+        <div class="grid" id="featured"></div>
+        <p style="margin-top:28px"><a class="btn btn-ghost" href="Exhibition.html">See all 16 prints</a></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <img src="images/manhattan-aerial.jpg" alt="Aerial view of Manhattan" loading="lazy">
+        <div>
+          <p class="eyebrow">About the studio</p>
+          <h2 class="section-title">Made in New York</h2>
+          <p>NYC Photography started on the rooftops of Midtown, chasing the few minutes each evening when the city turns gold. Today the collection travels from Manhattan to London, Dubai, and Hong Kong, but the idea is the same: find the angle that makes a familiar skyline feel new.</p>
+          <p>Every image is edited by hand and printed to order, so the print on your wall is made just for you.</p>
         </div>
-        <div class="newsletter">
-            <h3>Subscribe to our Newsletter</h3>
-            <form action="submit">
-                <input type="email" placeholder="Enter your email">
-                <button type="submit">Subscribe</button>
-            </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="features">
+          <div class="feature">
+            <h3>Archival quality</h3>
+            <p>Printed on heavyweight matte paper with pigment inks rated to last for generations.</p>
+          </div>
+          <div class="feature">
+            <h3>Ships in 5 days</h3>
+            <p>Each print is made to order, rolled in a protective tube, and shipped anywhere in the U.S.</p>
+          </div>
+          <div class="feature">
+            <h3>30-day returns</h3>
+            <p>Not right for your space? Send it back within 30 days for a full refund.</p>
+          </div>
         </div>
-    </footer>
-    <div class="copyright">&copy; 2023 NYCP LLC</div>
-    <script src="script.js"></script>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>NYC Photography</h2>
+          <p>Fine-art prints of New York and the world's great cities, shot from rooftops, bridges, and the street.</p>
+        </div>
+        <div>
+          <h2>Shop</h2>
+          <a href="Exhibition.html">All prints</a>
+          <a href="checkout.html">Cart</a>
+          <a href="user-reg.html">Create an account</a>
+        </div>
+        <div>
+          <h2>Studio</h2>
+          <a href="Contact.html">Contact</a>
+          <a href="Contact.html#policies">Shipping &amp; returns</a>
+          <a href="Contact.html#policies">Privacy</a>
+        </div>
+      </div>
+      <p class="copyright">&copy; <span id="year">2026</span> NYC Photography · A portfolio project by Ousmana Tunkara</p>
+    </div>
+  </footer>
+
+  <script src="scripts/site.js"></script>
+  <script src="scripts/prints.js"></script>
+  <script src="scripts/gallery.js"></script>
 </body>
+</html>
