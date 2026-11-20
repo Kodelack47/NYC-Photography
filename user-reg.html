@@ -1,211 +1,104 @@
-<!DOCTYPE html class"html">
-
+<!DOCTYPE html>
+<!-- Author: Ousmana Tunkara · github.com/Kodelack47 · NYC Photography -->
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>WAP</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="main.css">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-
-
-    <style>
-       
-
-        .login {
-
-            /* background-color: white; */
-            /* color: black; */
-            /* font-family: Georgia, 'Times New Roman', Times, serif; */
-            position: absolute;
-            left: calc(50% - 16.5vw);
-            top: calc(50% - 16.5vh);
-            padding: 2rem;
-            /* box-shadow: 1rem 1rem 3rem black; */
-            z-index: 1000;
-        }
-
-        form {
-            margin: 0 auto;
-            width: 50%;
-            padding: 20px;
-            /* background-color: #fff; */
-            border-radius: 5px;
-            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        input[type="date"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-        }
-
-        input[type="radio"] {
-            margin-right: 5px;
-        }
-
-
-        input[type="submit"] {
-
-
-            background-color: black;
-            /* position: absolute;
-            left: 4rem;
-            right: 4rem; */
-            width: 100%;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            color: white;
-
-
-            /* background-color:black;
-	color: #fff;
-	padding: 10px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	font-size: 16px;
- */
-
-        }
-
-        input[type="submit"]:hover {
-            background-color: #0062cc;
-        }
-
-        .title{
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-    </style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create an NYC Photography account.">
+  <title>Create an account | NYC Photography</title>
+  <link rel="stylesheet" href="styles/site.css">
 </head>
-
 <body>
-
-    <!-- header section -->
-    <header>
-
-        <div href="index.html" class="Head">
-            <b>NEW YORK CITY PHOTOGRAPHY</b>
-        </div>
-        <nav class="navbar-expand-md navbar-light bg link-light">
-            <div class="navbar container">
-                <ul>
-
-                    <li><a class="navbar-brand" href="index.html"> Home</a></li>
-                    <li><a class="navbar-brand" href="Exhibition.html">Exhibitions</a> </li>
-                    <li><a class="navbar-brand" href="user-reg.html">Registration</a></li>
-                    <li><a class="navbar-brand" href="login.html">Login</a></li>
-                    <li><a class="navbar-brand" href="checkout.html"> Checkout</a></li>
-
-                </ul>
-        </nav>
-        <!-- <div class="cart" src="capstone img\cart-shopping-solid.svg"></div> -->
-    </header>
-    <div>
-        <form class="login">
-            <h3>REGISTRATION</h3>
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" required><br>
-
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname" required><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br>
-
-            <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required><br>
-
-            <label for="gender">Gender:
-             Male
-            <input type="radio" id="male" name="gender" value="male" required>
-            Female
-            <input type="radio" id="female" name="gender" value="female" required>
-            </label>
-
-            <label for="birthdate">Birthdate:</label>
-            <input type="date" id="birthdate" name="birthdate" required><br>
-
-            <input type="submit" value="Submit">
-        </form>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">NYC <span>Photography</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="Exhibition.html">Exhibition</a>
+        <a href="Contact.html">Contact</a>
+        <a href="login.html">Log in</a>
+        <a href="checkout.html" class="cart-link">Cart <span class="cart-count" aria-label="items in cart">0</span></a>
+      </nav>
     </div>
+  </header>
 
-    <!-- <div class="login">
-            <div 
-            class="title">REGISTRATION</div>
-            <form method="post">
- 
-                    <label>
-                        Username:
-                        <input placeholder="Username">
-                    </label>
-        
-                    <label>
-                        Password:
-                        <input placeholder="Password">
-                    </label>
-        
-                    <label>
-                        <input type="checkbox"><span>Remember Me</span>
-                    </label>
-        
-        
-                    <button type="submit">Log In</button>
-                   
-                    
-            </form>
-        </div> -->
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Account</p>
+        <h1>Create an account</h1>
+        <p class="lead">Save your favorite prints and check out faster next time.</p>
+      </div>
+    </section>
 
-    <!-- <footer>
+    <section class="section" style="padding-top:16px">
+      <div class="container">
+        <div class="notice" id="confirmation" role="status" hidden style="max-width:560px"></div>
+        <form class="form-card" id="register-form" novalidate>
+          <div class="form-grid">
+            <div>
+              <label for="firstName">First name</label>
+              <input id="firstName" name="firstName" type="text" autocomplete="given-name">
+              <div class="error" id="firstName-error"></div>
+            </div>
+            <div>
+              <label for="lastName">Last name</label>
+              <input id="lastName" name="lastName" type="text" autocomplete="family-name">
+              <div class="error" id="lastName-error"></div>
+            </div>
+            <div class="full">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email">
+              <div class="error" id="email-error"></div>
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" autocomplete="new-password">
+              <div class="error" id="password-error"></div>
+            </div>
+            <div>
+              <label for="confirm">Confirm password</label>
+              <input id="confirm" name="confirm" type="password" autocomplete="new-password">
+              <div class="error" id="confirm-error"></div>
+            </div>
+            <div class="full">
+              <label class="check"><input type="checkbox" id="terms" name="terms"> I agree to the&nbsp;<a href="Contact.html#policies">store policies</a></label>
+              <div class="error" id="terms-error"></div>
+            </div>
+            <div class="full"><button class="btn btn-gold" type="submit">Create account</button></div>
+          </div>
+          <p class="demo-note">Already have an account? <a href="login.html">Log in</a>. Portfolio demo: accounts aren't saved.</p>
+        </form>
+      </div>
+    </section>
+  </main>
 
-        <div class="social-media">
-            <h3>Follow Us</h3>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Pinterest</a></li>
-            </ul>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>NYC Photography</h2>
+          <p>Fine-art prints of New York and the world's great cities, shot from rooftops, bridges, and the street.</p>
         </div>
-        <div class="contact-us">
-            <h3>Contact Us</h3>
-            <p>123 Main Street, New York, NY 10001</p>
-            <p>Phone: (555) 555-5555</p>
-            <p>Email: info@example.com</p>
+        <div>
+          <h2>Shop</h2>
+          <a href="Exhibition.html">All prints</a>
+          <a href="checkout.html">Cart</a>
+          <a href="user-reg.html">Create an account</a>
         </div>
-        <div class="newsletter">
-            <h3>Subscribe to our Newsletter</h3>
-            <form action="submit">
-                <input type="email" placeholder="Enter your email">
-                <button type="submit">Subscribe</button>
-            </form>
+        <div>
+          <h2>Studio</h2>
+          <a href="Contact.html">Contact</a>
+          <a href="Contact.html#policies">Shipping &amp; returns</a>
+          <a href="Contact.html#policies">Privacy</a>
         </div>
-    </footer>
-    <div class="copyright">&copy; 2023 NYCP LLC</div> -->
-    <script src="script.js"></script>
+      </div>
+      <p class="copyright">&copy; <span id="year">2026</span> NYC Photography · A portfolio project by Ousmana Tunkara</p>
+    </div>
+  </footer>
+
+  <script src="scripts/site.js"></script>
+  <script src="scripts/forms.js"></script>
 </body>
+</html>
